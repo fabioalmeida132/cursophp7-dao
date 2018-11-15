@@ -8,9 +8,29 @@
 
 require_once ("config.php");
 
-$user = new Usuario();
-$user->loadById(3);
+/*$user = new Usuario();
+$user->loadById(3);*/
 
-echo $user;
+//$lista = Usuario::getLista();
+//echo json_encode($lista);
+
+//$busca = Usuario::search("jo");
+//echo json_encode($busca);
+
+// CARREGA UM USUARIO
+//$usuario = new Usuario();
+//$usuario->login("root","456789d");
+
+// COMANDO INSERT
+//$aluno = new Usuario("Roberto", "741852");
+//$aluno->insert();
+
+// UPDATE
+$usuario = new Usuario();
+$usuario->loadByid(7);
+$usuario->update("professor", "123abc");
+
+echo $usuario;
+
 ?>
 
