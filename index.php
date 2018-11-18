@@ -11,8 +11,8 @@ require_once ("config.php");
 /*$user = new Usuario();
 $user->loadById(3);*/
 
-//$lista = Usuario::getLista();
-//echo json_encode($lista);
+$lista = Usuario::getLista();
+echo json_encode($lista);
 
 //$busca = Usuario::search("jo");
 //echo json_encode($busca);
@@ -32,11 +32,11 @@ $user->loadById(3);*/
 
 // DELETE
 
-$usuario = new Usuario();
-$usuario->loadByid(7);
-$usuario->delete();
+//$usuario = new Usuario();
+//$usuario->loadByid(7);
+//$usuario->delete();
 
-echo $usuario;
+//echo $usuario;
 
 ?>
 

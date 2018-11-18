@@ -83,7 +83,7 @@ Class Usuario {
 
     public static function getLista(){
         $sql = new Sql();
-        return $sql->select("SELECT * FROM tb_usuarios order by deslogin");
+        return $sql->select("SELECT * FROM tb_usuarios order by deslogin LIMIT 2");
     }
 
     public static function search($login){
